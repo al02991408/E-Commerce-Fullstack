@@ -1,5 +1,4 @@
-# E-Commerce-Fullstack
-Proyecto final de certificado Desarrollo Full Stack 4to Semestre.
+
 
 # E-Commerce Webiste For [TBD]
 ## Spring Boot Project
