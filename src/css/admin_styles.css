@@ -13,21 +13,13 @@ header {
     font-weight: bold;
 }
 
-.jumbotron {
-    background-color: #ffffff;
-    padding: 2rem 1rem;
-    border-radius: 0.3rem;
-    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+.container {
+    margin-top: 20px;
 }
 
-.jumbotron .display-4 {
-    font-size: 2.5rem;
-    font-weight: 300;
-}
-
-.jumbotron .lead {
-    font-size: 1.25rem;
-    font-weight: 300;
+.list-group-item {
+    font-size: 1.2rem;
+    padding: 15px 20px;
 }
 
 footer {

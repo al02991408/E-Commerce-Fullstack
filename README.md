@@ -1,76 +1,71 @@
 # E-Commerce-Fullstack
 Proyecto final de certificado Desarrollo Full Stack 4to Semestre.
 
-# E-Commerce Webiste For [TBD]
-## Spring Boot Project
-### Description :
-* This is website to buy [TBD] online
-* User Firendly
-* Adding and managing products
-* Single Sign On
-* This is an undergraduate level project developed using HTML, CSS, Javascript, MySQL, etc.
+# Sitio Web de E-Commerce Para Tienda de Ropa
+## Proyecto Spring Boot
+### Descripción:
+* Este es un sitio web para comprar ropa en línea
+* Amigable para el usuario
+* Agregar y gestionar productos
+* Inicio de sesión único (SSO)
+* Este es un proyecto de nivel universitario desarrollado usando HTML, CSS, Javascript, MySQL, etc.
 
-### Admin Module :
-* Add Categories
-* Add Products
-* View Users
-* Delete/Update Categories
-* Delete/Update Products 
+### Módulo de Administrador:
+* Agregar Categorías
+* Agregar Productos
+* Ver Usuarios
+* Eliminar/Actualizar Categorías
+* Eliminar/Actualizar Productos
 
-### User Module :
-* Register
-* Login 
-* SSO (Single Sign On)
-* View Products 
-* Add to Cart
-* Checkout Page
-* Online Payment 
+### Módulo de Usuario:
+* Registrarse
+* Iniciar sesión
+* SSO (Inicio de sesión único)
+* Ver Productos
+* Añadir al Carrito
+* Página de Pago
+* Pago en línea
 
-### Languages Used :
-1. Front-End :
+### Lenguajes Utilizados:
+1. Front-End:
 * HTML
 * CSS
 * JavaScript
-* BootStrap < para frameworks segun yo o templates
+* BootStrap
 
-///IGNORAR POR AHORA
-2. Back-End :
+2. Back-End:
 * Java
 * Spring Boot
 * Hibernate
-* Maven Dependecies
+* Dependencias de Maven
 
-3. Database :
+3. Base de Datos:
 * MySQL
 
-Note : This is a graduate/college level project.
-#### "Suggestion and Project improvmenets are appreciated."
-# Home Page
-![WhatsApp Image 2022-08-23 at 6 32 26 PM](https://user-images.githubusercontent.com/105354018/186172885-fef4e218-5c47-4cc7-a05b-1d8c49470c0b.jpeg)
+Nota: Este es un proyecto de nivel universitario.
+#### "Se agradecen sugerencias y mejoras del proyecto."
+# Página de Inicio
+Imagen aqui
 
-# Login Page
-Image here
+# Página de Inicio de Sesión
+Imagen aquí
 
-# Registration Page
-Image here
+# Página de Registro
+Imagen aquí
 
-# Shop Page
-Image here
+# Página de Tienda
+Imagen aquí
 
-# Cart Page
-Image here
+# Página del Carrito
+Imagen aquí
 
-# Checkout Page
-Image here
+# Página de Pago
+Imagen aquí
 
-# Payment Page
-Image here
+# Página de Administrador
+Imagen aquí
 
-# Admin Page
-Image here
+# Añadir Productos
+Imagen aquí
 
-
-# Add Products
-Image here
-
-# Thank You (FIN DEL README)
+# Gracias (FIN DEL README)
