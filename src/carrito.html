@@ -34,40 +34,34 @@
     </header>
 
     <main class="container mt-5">
-        <h1 class="mb-4">Tu Carrito</h1>
-        <div class="row">
-            <!-- Example cart item -->
-            <div class="col-md-12">
-                <div class="card mb-4">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-md-2">
-                                <img src="ruta/a/imagen.jpg" class="img-fluid" alt="Producto">
-                            </div>
-                            <div class="col-md-4">
-                                <h5 class="card-title">Nombre del Producto</h5>
-                                <p class="card-text">Descripción breve del producto.</p>
-                            </div>
-                            <div class="col-md-2">
-                                <p class="card-text"><strong>$Precio</strong></p>
-                            </div>
-                            <div class="col-md-2">
-                                <input type="number" class="form-control" value="1">
-                            </div>
-                            <div class="col-md-2">
-                                <button class="btn btn-danger">Eliminar</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Repeat for more cart items -->
-        </div>
-        <div class="row">
-            <div class="col-md-12 text-right">
-                <a href="pago.html" class="btn btn-primary btn-lg">Proceder al Pago</a>
-            </div>
-        </div>
+        <h1 class="mb-4">Carrito de Compras</h1>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Precio</th>
+                    <th>Cantidad</th>
+                    <th>Total</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Example cart item -->
+                <tr>
+                    <td>Nombre del Producto</td>
+                    <td>$Precio</td>
+                    <td>
+                        <input type="number" class="form-control" value="1">
+                    </td>
+                    <td>$Total</td>
+                    <td>
+                        <button class="btn btn-danger btn-sm">Eliminar</button>
+                    </td>
+                </tr>
+                <!-- Repeat for more cart items -->
+            </tbody>
+        </table>
+        <a href="pago.html" class="btn btn-primary">Proceder al Pago</a>
     </main>
 
     <footer class="bg-light text-center py-3">
