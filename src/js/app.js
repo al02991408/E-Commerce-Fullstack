@@ -1,4 +1,3 @@
-// filepath: /C:/Users/Usuario/OneDrive/Documentos/GitHub/E-Commerce-Fullstack/src/js/app.js
 const express = require('express');
 const cors = require('cors');
 const dotenv = require('dotenv');

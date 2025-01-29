@@ -1,4 +1,3 @@
-// filepath: /C:/Users/Usuario/OneDrive/Documentos/GitHub/E-Commerce-Fullstack/src/controllers/productController.js
 const Product = require('../models/Product');
 
 const getProducts = async (req, res) => {

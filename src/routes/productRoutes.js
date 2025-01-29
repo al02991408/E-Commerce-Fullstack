@@ -1,9 +1,9 @@
-// filepath: /C:/Users/Usuario/OneDrive/Documentos/GitHub/E-Commerce-Fullstack/src/routes/productRoutes.js
 const express = require('express');
 const { getProducts, createProduct } = require('../controllers/productController');
+const authMiddleware = require('../middleware/authMiddleware');
 const router = express.Router();
 
 router.get('/', getProducts);
-router.post('/', createProduct);
+router.post('/', authMiddleware, createProduct);
 
 module.exports = router;
