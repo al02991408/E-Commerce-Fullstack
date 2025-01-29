@@ -1,3 +1,4 @@
+// filepath: /C:/Users/Usuario/OneDrive/Documentos/GitHub/E-Commerce-Fullstack/src/config/db.js
 const mongoose = require('mongoose');
 
 const connectDB = async () => {
