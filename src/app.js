@@ -1,10 +1,11 @@
 const express = require('express');
 const cors = require('cors');
 const dotenv = require('dotenv');
-const connectDB = require('../config/db');
-const authRoutes = require('../routes/authRoutes');
-const productRoutes = require('../routes/productRoutes');
-const errorMiddleware = require('../middleware/errorMiddleware');
+const connectDB = require('../../config/db');  // en lugar de '../config/db'
+const authRoutes = require('../../routes/authRoutes');
+const productRoutes = require('../../routes/productRoutes');
+const errorMiddleware = require('../../middleware/errorMiddleware');
+
 
 dotenv.config(); // Cargar variables de entorno
 
