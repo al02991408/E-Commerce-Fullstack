@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SimpleClothing - Moda Unisex Minimalista</title>
+    <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="SimpleClothing Logo" width="40">
+                <span>SimpleClothing</span>
+            </div>
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="carrito.html">Carrito</a></li>
+                    <li><a href="login.html">Iniciar Sesión</a></li>
+                </ul>
+                <form class="search-form">
+                    <input type="search" placeholder="Buscar productos..." aria-label="Buscar">
+                    <button type="submit">Buscar</button>
+                </form>
+            </nav>
+            <button class="menu-toggle" aria-label="Abrir menú">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Moda Minimalista para Todos</h1>
+            <p>Diseños modernos y atemporales para tu estilo único.</p>
+            <a href="productos.html" class="btn">Explorar Colección</a>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured-products">
+        <div class="container">
+            <h2>Productos Destacados</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="images/producto1.jpg" alt="Imagen de Camiseta Minimalista">
+                    <h3>Camiseta Minimalista</h3>
+                    <p>Diseño limpio y moderno para cualquier ocasión.</p>
+                    <a href="producto1.html" class="btn">Ver más</a>
+                </div>
+                <div class="product-card">
+                    <img src="images/producto2.jpg" alt="Imagen de Hoodie Unisex">
+                    <h3>Hoodie Unisex</h3>
+                    <p>Comodidad y estilo en un solo producto.</p>
+                    <a href="producto2.html" class="btn">Ver más</a>
+                </div>
+                <div class="product-card">
+                    <img src="images/producto3.jpg" alt="Imagen de Pantalón Moderno">
+                    <h3>Pantalón Moderno</h3>
+                    <p>Perfecto para un look casual o elegante.</p>
+                    <a href="producto3.html" class="btn">Ver más</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Promotions Section -->
+    <section class="promotions">
+        <div class="container">
+            <h2>Promociones Especiales</h2>
+            <div class="promotion-grid">
+                <div class="promotion-card">
+                    <h3>10% de Descuento</h3>
+                    <p>En una selección de productos destacados.</p>
+                    <a href="productos.html" class="btn">Aprovechar Oferta</a>
+                </div>
+                <div class="promotion-card">
+                    <h3>2x1 en Hoodies</h3>
+                    <p>No te pierdas esta promoción exclusiva.</p>
+                    <a href="productos.html" class="btn">Aprovechar Oferta</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="social-media">
+                <a href="#"><img src="images/facebook-icon.png" alt="Facebook"></a>
+                <a href="#"><img src="images/instagram-icon.png" alt="Instagram"></a>
+                <a href="#"><img src="images/twitter-icon.png" alt="Twitter"></a>
+            </div>
+            <p>&copy; 2023 SimpleClothing. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Toggle menu for mobile
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

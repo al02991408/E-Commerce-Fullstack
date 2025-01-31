@@ -1,25 +1,23 @@
 const express = require('express');
+const connectDB = require('./config/db');
 const cors = require('cors');
 const dotenv = require('dotenv');
-const connectDB = require('./config/db');
-const authRoutes = require('./routes/authRoutes');
-const productRoutes = require('./routes/productRoutes');
-const errorMiddleware = require('./middleware/errorMiddleware');
 
 dotenv.config();
 
 const app = express();
+
+// Connect Database
 connectDB();
 
+// Init Middleware
+app.use(express.json({ extended: false }));
 app.use(cors());
-app.use(express.json());
 
-app.use('/api/auth', authRoutes);
-app.use('/api/products', productRoutes);
+// Define Routes
+app.use('/api/auth', require('./routes/authRoutes'));
+app.use('/api/products', require('./routes/productRoutes'));
 
-app.use(errorMiddleware);
+const PORT = process.env.PORT || 5000;
 
-const PORT = process.env.PORT || 5001;
-app.listen(PORT, () => {
-  console.log(`Servidor corriendo en http://localhost:${PORT}`);
-});
+app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
