@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+.list-group-item {
+    font-size: 1.2rem;
+    padding: 15px 20px;
+}
+
+footer {
+    background-color: #f8f9fa;
+    padding: 1rem 0;
+    border-top: 1px solid #e9ecef;
+}
+
+footer p {
+    margin: 0;
+    color: #6c757d;
+}
+
+.table {
+    margin-top: 20px;
+}
+
+.table th, .table td {
+    vertical-align: middle;
+}
+
+.btn-sm {
+    margin-right: 5px;
+}
