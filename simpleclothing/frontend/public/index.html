@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
-    <!-- Header -->
+    <!-- Encabezado -->
     <header class="header">
         <div class="container">
             <div class="logo">
@@ -36,7 +36,7 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
+    <!-- Sección Hero -->
     <section class="hero">
         <div class="container">
             <h1>Moda Minimalista para Todos</h1>
@@ -45,34 +45,17 @@
         </div>
     </section>
 
-    <!-- Featured Products -->
+    <!-- Productos Destacados -->
     <section class="featured-products">
         <div class="container">
             <h2>Productos Destacados</h2>
-            <div class="product-grid">
-                <div class="product-card">
-                    <img src="images/producto1.jpg" alt="Imagen de Camiseta Minimalista">
-                    <h3>Camiseta Minimalista</h3>
-                    <p>Diseño limpio y moderno para cualquier ocasión.</p>
-                    <a href="producto1.html" class="btn">Ver más</a>
-                </div>
-                <div class="product-card">
-                    <img src="images/producto2.jpg" alt="Imagen de Hoodie Unisex">
-                    <h3>Hoodie Unisex</h3>
-                    <p>Comodidad y estilo en un solo producto.</p>
-                    <a href="producto2.html" class="btn">Ver más</a>
-                </div>
-                <div class="product-card">
-                    <img src="images/producto3.jpg" alt="Imagen de Pantalón Moderno">
-                    <h3>Pantalón Moderno</h3>
-                    <p>Perfecto para un look casual o elegante.</p>
-                    <a href="producto3.html" class="btn">Ver más</a>
-                </div>
+            <div class="product-grid" id="product-grid">
+                <!-- Productos cargados dinámicamente -->
             </div>
         </div>
     </section>
 
-    <!-- Promotions Section -->
+    <!-- Sección de Promociones -->
     <section class="promotions">
         <div class="container">
             <h2>Promociones Especiales</h2>
@@ -91,7 +74,7 @@
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Pie de Página -->
     <footer class="footer">
         <div class="container">
             <div class="social-media">
@@ -99,19 +82,11 @@
                 <a href="#"><img src="images/instagram-icon.png" alt="Instagram"></a>
                 <a href="#"><img src="images/twitter-icon.png" alt="Twitter"></a>
             </div>
-            <p>&copy; 2023 SimpleClothing. Todos los derechos reservados.</p>
+            <p>&copy; 2025 SimpleClothing. Todos los derechos reservados.</p>
         </div>
     </footer>
 
     <!-- Scripts -->
-    <script>
-        // Toggle menu for mobile
-        const menuToggle = document.querySelector('.menu-toggle');
-        const navLinks = document.querySelector('.nav-links');
-
-        menuToggle.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-        });
-    </script>
+    <script src="src/js/main.js"></script>
 </body>
 </html>

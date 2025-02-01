@@ -1,6 +1,3 @@
-/* Importar fuente Poppins */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-
 /* Estilos generales */
 body {
     font-family: 'Poppins', sans-serif;
@@ -73,7 +70,7 @@ header nav ul li a:hover {
     margin-bottom: 40px;
 }
 
-.hero .cta-button {
+.hero .btn {
     padding: 15px 30px;
     background-color: #000;
     color: #ffeb3b;
@@ -83,34 +80,34 @@ header nav ul li a:hover {
     transition: background-color 0.3s;
 }
 
-.hero .cta-button:hover {
+.hero .btn:hover {
     background-color: #333;
 }
 
 /* Estilos de la sección de productos */
-.products {
+.featured-products {
     padding: 50px 20px;
     text-align: center;
 }
 
-.products .container {
+.featured-products .container {
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.products h2 {
+.featured-products h2 {
     font-size: 2.5em;
     margin-bottom: 40px;
 }
 
-.product-list {
+.product-grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
 }
 
-.product-item {
+.product-card {
     background-color: #f9f9f9;
     padding: 20px;
     border: 1px solid #ddd;
@@ -119,22 +116,22 @@ header nav ul li a:hover {
     transition: transform 0.3s;
 }
 
-.product-item:hover {
+.product-card:hover {
     transform: scale(1.05);
 }
 
-.product-item img {
+.product-card img {
     width: 100%;
     height: auto;
     margin-bottom: 20px;
 }
 
-.product-item h3 {
+.product-card h3 {
     font-size: 1.2em;
     margin-bottom: 10px;
 }
 
-.product-item p {
+.product-card p {
     font-size: 1em;
     color: #000;
 }
@@ -145,61 +142,4 @@ footer {
     padding: 20px;
     background-color: #000;
     color: #fff;
-}
-
-footer .social-media {
-    margin-bottom: 20px;
-}
-
-footer .social-media a {
-    margin: 0 10px;
-    display: inline-block;
-}
-
-footer .social-media img {
-    width: 24px;
-    height: 24px;
-}
-
-/* Estilos responsivos */
-@media (max-width: 768px) {
-    header nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .hero h1 {
-        font-size: 2.5em;
-    }
-
-    .hero p {
-        font-size: 1.1em;
-    }
-
-    .product-list {
-        flex-direction: column;
-    }
-
-    .product-item {
-        width: 100%;
-    }
-}
-
-@media (max-width: 480px) {
-    .hero h1 {
-        font-size: 2em;
-    }
-
-    .hero p {
-        font-size: 1em;
-    }
-
-    .hero .cta-button {
-        padding: 10px 20px;
-        font-size: 1em;
-    }
-
-    .products h2 {
-        font-size: 2em;
-    }
 }

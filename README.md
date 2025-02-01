@@ -2,13 +2,13 @@
 Proyecto final de certificado Desarrollo Full Stack 4to Semestre.
 
 # Sitio Web de E-Commerce Para Tienda de Ropa
-## Proyecto Spring Boot
+
 ### Descripción:
 * Este es un sitio web para comprar ropa en línea
 * Amigable para el usuario
 * Agregar y gestionar productos
 * Inicio de sesión único (SSO)
-* Este es un proyecto de nivel universitario desarrollado usando HTML, CSS, Javascript, MySQL, etc.
+* Este es un proyecto de nivel universitario desarrollado usando HTML, CSS, Javascript, MongoDB, etc.
 
 ### Módulo de Administrador:
 * Agregar Categorías
@@ -31,16 +31,14 @@ Proyecto final de certificado Desarrollo Full Stack 4to Semestre.
 * HTML
 * CSS
 * JavaScript
-* BootStrap
 
 2. Back-End:
-* Java
-* Spring Boot
-* Hibernate
-* Dependencias de Maven
+* Node.js
+* Express.js
+* React.js
 
 3. Base de Datos:
-* MySQL
+* MongoDB
 
 Nota: Este es un proyecto de nivel universitario.
 #### "Se agradecen sugerencias y mejoras del proyecto."

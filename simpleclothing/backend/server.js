@@ -3,21 +3,24 @@ const connectDB = require('./config/db');
 const cors = require('cors');
 const dotenv = require('dotenv');
 
+// Cargar variables de entorno
 dotenv.config();
 
-const app = express();
-
-// Connect Database
+// Conectar a la base de datos
 connectDB();
 
-// Init Middleware
-app.use(express.json({ extended: false }));
+// Inicializar la aplicación Express
+const app = express();
+
+// Middleware para parsear JSON
+app.use(express.json());
 app.use(cors());
 
-// Define Routes
-app.use('/api/auth', require('./routes/authRoutes'));
-app.use('/api/products', require('./routes/productRoutes'));
+// Ruta de prueba
+app.get('/', (req, res) => {
+    res.send('API funcionando');
+});
 
+// Definir el puerto y arrancar el servidor
 const PORT = process.env.PORT || 5000;
-
-app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
+app.listen(PORT, () => console.log(`Servidor iniciado en el puerto ${PORT}`));

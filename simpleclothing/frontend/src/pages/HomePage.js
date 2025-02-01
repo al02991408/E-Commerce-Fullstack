@@ -1,6 +1,9 @@
 import React from 'react';
+import ProductCard from '../components/ProductCard'; // Assuming you have a ProductCard component
 
 const HomePage = () => {
+  const featuredProducts = [/* array of featured products */];
+
   return (
     <div className="container">
       <header className="header">
@@ -28,7 +31,9 @@ const HomePage = () => {
         <div className="container">
           <h2>Productos Destacados</h2>
           <div className="product-grid">
-            {/* Product cards here */}
+            {featuredProducts.map(product => (
+              <ProductCard key={product.id} product={product} />
+            ))}
           </div>
         </div>
       </section>
