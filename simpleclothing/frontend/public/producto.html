@@ -5,34 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Producto - SimpleClothing</title>
     <link rel="stylesheet" href="../src/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="images/logo.png" alt="Logo de SimpleClothing">
+    <!-- Encabezado -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Logo de SimpleClothing">
+            </div>
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="productos.html">Tienda</a></li>
+                    <li><a href="acerca.html">Acerca de</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="productos.html">Tienda</a></li>
-                <li><a href="acerca.html">Acerca de</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
     </header>
+
+    <!-- Detalles del Producto -->
     <section class="product-detail">
         <div class="container" id="product-detail">
             <!-- Detalles del producto cargados dinámicamente -->
         </div>
     </section>
-    <footer>
-        <div class="social-media">
-            <a href="#"><img src="images/facebook-icon.png" alt="Facebook"></a>
-            <a href="#"><img src="images/instagram-icon.png" alt="Instagram"></a>
-            <a href="#"><img src="images/twitter-icon.png" alt="Twitter"></a>
+
+    <!-- Pie de Página -->
+    <footer class="footer">
+        <div class="container">
+            <div class="social-media">
+                <a href="#" aria-label="Facebook"><img src="images/facebook-icon.png" alt="Facebook"></a>
+                <a href="#" aria-label="Instagram"><img src="images/instagram-icon.png" alt="Instagram"></a>
+                <a href="#" aria-label="Twitter"><img src="images/twitter-icon.png" alt="Twitter"></a>
+            </div>
+            <p>&copy; 2025 SimpleClothing. Todos los derechos reservados.</p>
         </div>
-        <p>&copy; 2025 SimpleClothing. Todos los derechos reservados.</p>
     </footer>
+
+    <!-- Scripts -->
     <script src="../src/js/main.js"></script>
 </body>
 </html>

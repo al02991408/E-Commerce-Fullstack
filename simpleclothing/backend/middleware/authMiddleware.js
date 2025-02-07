@@ -1,17 +1,24 @@
 const jwt = require('jsonwebtoken');
+const asyncHandler = require('express-async-handler');
+const User = require('../models/userModel');
 
-module.exports = function (req, res, next) {
-    const token = req.header('x-auth-token');
-
+const protect = asyncHandler(async (req, res, next) => {
+    let token;
+    if (req.headers.authorization && req.headers.authorization.startsWith('Bearer')) {
+        try {
+            token = req.headers.authorization.split(' ')[1];
+            const decoded = jwt.verify(token, process.env.JWT_SECRET);
+            req.user = await User.findById(decoded.id).select('-password');
+            next();
+        } catch (error) {
+            res.status(401);
+            throw new Error('Not authorized, token failed');
+        }
+    }
     if (!token) {
-        return res.status(401).json({ msg: 'No hay token, autorización denegada' });
+        res.status(401);
+        throw new Error('Not authorized, no token');
     }
+});
 
-    try {
-        const decoded = jwt.verify(token, process.env.JWT_SECRET);
-        req.user = decoded.user;
-        next();
-    } catch (err) {
-        res.status(401).json({ msg: 'Token no válido' });
-    }
-};
+module.exports = { protect };
