@@ -1,10 +1,11 @@
-const express = require('express');
-const connectDB = require('./config/db');
-const cors = require('cors');
-const dotenv = require('dotenv');
-const helmet = require('helmet');
-const morgan = require('morgan');
-const { notFound, errorHandler } = require('./middleware/errorMiddleware');
+import express from 'express';
+import connectDB from './config/db.js';
+import cors from 'cors';
+import dotenv from 'dotenv';
+import helmet from 'helmet';
+import morgan from 'morgan';
+import { notFound, errorHandler } from './middleware/errorMiddleware.js';
+import productRoutes from './routes/productRoutes.js';
 
 // Cargar variables de entorno
 dotenv.config();
@@ -27,8 +28,11 @@ app.use(cors());
 // Middleware para logging
 app.use(morgan('dev'));
 
+// Rutas de productos
+app.use('/api/products', productRoutes);
+
 // Ruta de prueba
-app.get('/', (req, res) => {
+app.get('/', (_, res) => {
     res.send('API funcionando');
 });
 

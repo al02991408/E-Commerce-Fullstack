@@ -1,7 +1,8 @@
-const express = require('express');
+import express from 'express';
+import { getProducts, getProductById, createProduct, updateProduct, deleteProduct } from '../controllers/productController';
+import auth from '../middleware/authMiddleware';
+
 const router = express.Router();
-const { getProducts, getProductById, createProduct, updateProduct, deleteProduct } = require('../controllers/productController');
-const auth = require('../middleware/authMiddleware');
 
 // Obtener todos los productos
 router.get('/', getProducts);
@@ -18,4 +19,4 @@ router.put('/:id', auth, updateProduct);
 // Eliminar un producto por ID (requiere autenticación)
 router.delete('/:id', auth, deleteProduct);
 
-module.exports = router;
+export default router;
