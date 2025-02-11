@@ -1,6 +1,6 @@
 import express from 'express';
-import { getProducts, getProductById, createProduct, updateProduct, deleteProduct } from '../controllers/productController';
-import auth from '../middleware/authMiddleware';
+import { getProducts, getProductById, createProduct, updateProduct, deleteProduct } from '../controllers/productController.js';
+import { protect } from '../middleware/authMiddleware.js';
 
 const router = express.Router();
 
@@ -11,12 +11,12 @@ router.get('/', getProducts);
 router.get('/:id', getProductById);
 
 // Crear un nuevo producto (requiere autenticación)
-router.post('/', auth, createProduct);
+router.post('/', protect, createProduct);
 
 // Actualizar un producto por ID (requiere autenticación)
-router.put('/:id', auth, updateProduct);
+router.put('/:id', protect, updateProduct);
 
 // Eliminar un producto por ID (requiere autenticación)
-router.delete('/:id', auth, deleteProduct);
+router.delete('/:id', protect, deleteProduct);
 
 export default router;

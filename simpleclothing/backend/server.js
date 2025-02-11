@@ -6,6 +6,7 @@ import helmet from 'helmet';
 import morgan from 'morgan';
 import { notFound, errorHandler } from './middleware/errorMiddleware.js';
 import productRoutes from './routes/productRoutes.js';
+import authRoutes from './routes/authRoutes.js';
 
 // Cargar variables de entorno
 dotenv.config();
@@ -30,6 +31,9 @@ app.use(morgan('dev'));
 
 // Rutas de productos
 app.use('/api/products', productRoutes);
+
+// Rutas de autenticación
+app.use('/api/auth', authRoutes);
 
 // Ruta de prueba
 app.get('/', (_, res) => {
